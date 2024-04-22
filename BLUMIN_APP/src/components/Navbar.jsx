@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoMenu } from "react-icons/io5";
 import { FaXmark } from "react-icons/fa6";
+import logo from '../assets/BLUMIN LOGO.png'
 
 const Navbar = () => {
     const Links = [
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className='shadow-md w-full fixed top-0 left-0 z-10'>
             <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
                 <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-                    <Link to='/'>Logo<span> BLUMIN</span></Link>
+                    <Link to='/'><img alt="content" className="object-contain h-12 md:h-[10vh]" src={logo} /></Link>
                 </div>
 
                 <div onClick={() => setOpen(!open)} className='absolute right-10 top-5 cursor-pointer md:hidden w-7 h-7'>
