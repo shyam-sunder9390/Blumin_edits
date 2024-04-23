@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/page-logo.png'
 
 const Footer = () => {
     return (
@@ -8,8 +9,9 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="flex items-center mb-6 md:mb-0">
                         {/* <img src="./vite.svg" alt="Logo" className="h-8 md:h-10 mr-4" /> */}
-                        Logo  .
-                        <span className="text-sm text-gray-600 dark:text-gray-400">BLUMIN</span>
+
+                        <img src={Logo} alt='Logo' className=' h-[10vh]' />
+                        <span className="text-md text-gray-600 dark:text-gray-400">BLUMIN</span>
                     </div>
                     <ul className="flex flex-wrap items-center text-sm font-medium text-gray-500">
                         <li>

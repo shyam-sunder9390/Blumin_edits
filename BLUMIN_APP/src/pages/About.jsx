@@ -4,7 +4,7 @@ import logo1 from '../assets/logo1.png';
 import logo2 from '../assets/logo2.png';
 import { motion } from 'framer-motion';
 import FAQ from '../components/FAQ';
-import { Heading } from '@radix-ui/themes'
+import { Heading, SegmentedControl } from '@radix-ui/themes'
 
 const About = () => {
     const [showFAQs, setShowFAQs] = useState([false, false, false, false]);
